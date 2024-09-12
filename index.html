@@ -5,8 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise One</title>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+    <!-- comment -->
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#box-model">Box Model</a></li>
+                <li> <a href="#flexbox">Flexbox</a></li>
+                <li> <a href="#positioning-elements">Positioning Elements</a></li>
+                <li> <a href="#heading-usage">Heading Usage</a></li>
+                <li> <a href="#simple-javascript">Simple JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="box-model"> 
+            <section class="box-model-section" >
+                <div class="box-model-wrapper">
+                    <h1> CSS Box Model </h1>
+                    /* Padding is inside of the element in CSS*/
+                    <h2> padding: 40px;</h2>
+                    /* Margin is outside of the element in CSS*/
+                    <h2> margin: 40px; (outside)</h2>
+                    /* Border is added to width and height of elements in CSS */
+                    <h2>border: 10 px solid green:</h3>
+                </div>
+            </section>
+        </section>
+        <!-- flexbox -->
+        <section id="flexbox"> 
+            <section class="flexbox-section">
+                <div class="flexbox-wrapper">
+                    <div class="flexbox-element flexbox-title"> Display: Flex</div>
+                    <div class="flexbox-bottom"></div>
+                    <div class="flexbox-left"> </div>
+                    <div class="flexbox-right"></div>
+                </div>
+            </section>    
+        </section>
+
+        <section id="positioning-elements" class="position-section"> 
+            <div class="position-wrapper"> 
+                <h1> Positioning</h1>
+                <h1> Elements</h1>
+                <div class="circle" style= "right: 40px; top: 20px;">  </div>
+                <div class="circle" style= "right: 100px; top: 150px;">  </div>
+                <div class="circle" style="left: 40px; bottom: 40px;"> </div>
+                <div class="square"> </div>
+            </div>
+        </section>
+        <section id="heading-usage" class="heading-section"> 
+            <div class="heading-wrapper">
+                <h1> Proper Heading Usage (h1) </h1>
+                <h2> fnnjjkmk </h2>
+                <h3> nieknldi</h3>
+                <p> onrimjrg nrng</p>
+                <h4> mdcscmlsd vm</h4>
+                <p> dmfcddsg</p>
+            </div>
+
+        </section>
+
+        <section id="simple-javascript" class="javascript-section"> 
+            <script>
+                let counterValue = 0;
+                function increaseCounterValue(){
+                    counterValue = counterValue + 1;
+                    const counterDiv = document.querySelector("#counter");
+                    counterDiv.innerHTML = counterValue
+                }
+
+            </script>
+            <h2>Simple JavaScript</h2>
+            <div class=" counter-button-wrapper">
+                <p id="counter" >0</p>
+                <div id="button">
+                    <button onclick="increaseCounterValue()"> Click to increase</button>
+                </div>
+            </div>
+            <b
+        </section>
+
+
+         <!--<section id="layout" class="box-model-section"> </section>  -->
+            
+       
+    </main>
+    <footer>
+        <h3> Devynne Best - Fall, 24</h3>
+    </footer>
 </body>
 </html>
