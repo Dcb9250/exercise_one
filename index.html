@@ -31,7 +31,7 @@
                     /* Margin is outside of the element in CSS*/
                     <h2> margin: 40px; (outside)</h2>
                     /* Border is added to width and height of elements in CSS */
-                    <h2>border: 10 px solid green:</h3>
+                    <h2>border: 10 px solid green;</h3>
                 </div>
             </section>
         </section>
@@ -40,10 +40,22 @@
             <section class="flexbox-section">
                 <div class="flexbox-wrapper">
                     <div class="flexbox-element flexbox-title"> Display: Flex</div>
-                    <div class="flexbox-bottom"></div>
-                    <div class="flexbox-left"> </div>
-                    <div class="flexbox-right"></div>
                 </div>
+                <div class="flexbox-bottom">    
+                    <div class="flexbox-left"> 
+                        <div> </div>
+                        <div> </div>
+                        <div> </div>
+                    </div>
+                    <div class="flexbox-right"> 
+                        <div> </div>
+                        <div> </div>
+                        <div> </div>
+                    </div>
+                </div>  
+
+                    
+                    <div class="flexbox-right"> </div>
             </section>    
         </section>
 
@@ -52,19 +64,20 @@
                 <h1> Positioning</h1>
                 <h1> Elements</h1>
                 <div class="circle" style= "right: 40px; top: 20px;">  </div>
-                <div class="circle" style= "right: 100px; top: 150px;">  </div>
+                <div class="circle" style= "right: 100px; top: 250px;">  </div>
                 <div class="circle" style="left: 40px; bottom: 40px;"> </div>
-                <div class="square"> </div>
+                <div class="square" style="right: 40px; top: 340px;"> </div>
+                <div class="square" style=" right: 45%; top: 40%;"> </div>
             </div>
         </section>
         <section id="heading-usage" class="heading-section"> 
             <div class="heading-wrapper">
                 <h1> Proper Heading Usage (h1) </h1>
-                <h2> fnnjjkmk </h2>
-                <h3> nieknldi</h3>
-                <p> onrimjrg nrng</p>
-                <h4> mdcscmlsd vm</h4>
-                <p> dmfcddsg</p>
+                <h2> A heading describes the content below it (h2) </h2>
+                <h3> Style of the text is not relevant (h3)</h3>
+                <p> Here is a paragraph about why text-size does not affect the order of the headings. We want to consider the heirarchy of the information and not the styling for determining which tag we choose. (p)</p>
+                <h4> This could be another heading about text size (h4)</h4>
+                <p> And you could put another paragraph (or two, or three...) under this further describing this concept. (p)</p>
             </div>
 
         </section>
@@ -77,13 +90,13 @@
                     const counterDiv = document.querySelector("#counter");
                     counterDiv.innerHTML = counterValue
                 }
-
             </script>
+
             <h2>Simple JavaScript</h2>
-            <div class=" counter-button-wrapper">
+            <div class= "counter-button-wrapper" >
                 <p id="counter" >0</p>
-                <div id="button">
-                    <button onclick="increaseCounterValue()"> Click to increase</button>
+                <div id="button" >
+                    <button onclick="increaseCounterValue()" class= "button"> Click to increase</button>
                 </div>
             </div>
             <b
